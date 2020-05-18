@@ -17,18 +17,14 @@ const { connect, initSchemas } = require("./mongodbConnection/init.js");
   initSchemas();
   console.log("后端连接成功，模板建立成功");
 })();
-app
-  .use(cors())
-  .use(logger())
-  .use(errorHandle)
-  .use(checkToken);
+app.use(cors()).use(logger()).use(errorHandle).use(checkToken);
 // .use(bodyParser());
 app.use(
   koaBody({
     multipart: true,
     formidable: {
-      maxFileSize: 200 * 1024 * 1024 // 设置上传文件大小最大限制，默认2M
-    }
+      maxFileSize: 200 * 1024 * 1024, // 设置上传文件大小最大限制，默认2M
+    },
   })
 );
 
@@ -39,6 +35,6 @@ app.use(serve(path.join(__dirname, "/public")));
 
 app.use(router.routes()).use(router.allowedMethods());
 
-app.listen(4000, () => {
-  console.log("sever listen on http://127.0.0.1:4000");
+app.listen(4001, () => {
+  console.log("sever listen on http://127.0.0.1:4001");
 });
