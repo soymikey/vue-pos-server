@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["sendMessage"],{"3d35":function(n,e,s){"use strict";s.r(e);var t=function(){var n=this,e=n.$createElement,s=n._self._c||e;return s("div",{staticClass:"fillcontain"},[n._v("\n    sendMessage\n")])},a=[],c={},i=c,l=(s("bb98"),s("2877")),u=Object(l["a"])(i,t,a,!1,null,null,null);e["default"]=u.exports},bb98:function(n,e,s){"use strict";var t=s("ee45"),a=s.n(t);a.a},ee45:function(n,e,s){}}]);
+//# sourceMappingURL=sendMessage.87aa3b38.js.map

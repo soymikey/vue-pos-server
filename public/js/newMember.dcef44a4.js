@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["newMember"],{ad20:function(n,e,t){},da60:function(n,e,t){"use strict";var a=t("ad20"),c=t.n(a);c.a},fa2c:function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",{staticClass:"fillcontain"},[n._v("\n    newMember\n")])},c=[],i={},s=i,l=(t("da60"),t("2877")),r=Object(l["a"])(s,a,c,!1,null,null,null);e["default"]=r.exports}}]);
+//# sourceMappingURL=newMember.dcef44a4.js.map
