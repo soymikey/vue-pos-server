@@ -35,6 +35,6 @@ app.use(serve(path.join(__dirname, "/public")));
 
 app.use(router.routes()).use(router.allowedMethods());
 
-app.listen(4001, () => {
-  console.log("sever listen on http://127.0.0.1:4001");
+app.listen(4000, () => {
+  console.log("sever listen on http://127.0.0.1:4000");
 });
