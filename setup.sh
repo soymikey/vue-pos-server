@@ -2,9 +2,9 @@
 #image_version=`date +%Y%m%d%H%M`;
 
 # 关闭容器
-# docker-compose stop || true;
+ docker-compose stop pos-server || true;
 # # 删除容器
-# docker-compose down || true;
+ docker-compose down pos-server || true;
 # 构建镜像
 docker-compose build;
 # 启动并后台运行

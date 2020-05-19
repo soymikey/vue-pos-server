@@ -8,6 +8,5 @@ services:
     image: nodejs # 镜像名称
     container_name: pos-server # 容器名称
     restart: always # 重启方式
-
     ports: # 映射端口
       - "4000:4000"

@@ -15,7 +15,7 @@ const { connect, initSchemas } = require("./mongodbConnection/init.js");
 (async () => {
   await connect();
   initSchemas();
-  console.log("后端连接成功，模板建立成功");
+  console.log("后端连接成功，模板建立成功1");
 })();
 app.use(cors()).use(logger()).use(errorHandle).use(checkToken);
 // .use(bodyParser());
