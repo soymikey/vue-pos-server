@@ -1,6 +1,7 @@
  # 镜像版本
 FROM node:10.0-alpine            
 
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 # 设置时区
 RUN apk --update add tzdata \
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
@@ -24,8 +25,7 @@ COPY package.json /usr/src/node-app/pos-server/package.json
 # 如果使用的境外服务器，无需使用淘宝的镜像源，即改为`RUN npm i`。
 RUN apk --no-cache add --virtual builds-deps build-base python
 
-RUN npm i 
-# --registry=https://registry.npm.taobao.org
+RUN npm i  --registry=https://registry.npm.taobao.org
 
 # 拷贝所有源代码到工作目录
 COPY . /usr/src/node-app/pos-server
