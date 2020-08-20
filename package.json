@@ -18,7 +18,7 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-3": "^6.22.0",
     "babel-register": "^6.24.0",
-    "bcrypt": "^3.0.4",
+    "bcrypt": "^5.0.0",
     "captchapng": "^0.0.1",
     "glob": "^7.1.3",
     "jsonwebtoken": "^8.5.1",
